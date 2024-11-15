@@ -1,6 +1,7 @@
 package com.gameListEstudo.dsList.dto;
 
 import com.gameListEstudo.dsList.entities.Game;
+import com.gameListEstudo.dsList.projections.GameMinProjection;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -22,6 +23,14 @@ public class GameMinDTO {
         year = entity.getYear ();
         imgUrl= entity.getImgUrl ();
         shortDescription= entity.getShortDescription ();
+    }
+
+    public GameMinDTO(GameMinProjection projection) {
+        Id = projection.getId ();
+        title = projection.getTitle ();
+        year = projection.getYear ();
+        imgUrl= projection.getImgUrl ();
+        shortDescription= projection.getShortDescription ();
     }
     public Long getId() {
         return Id;

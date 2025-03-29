@@ -53,6 +53,10 @@ Caso esteja utilizando o H2 Database, mantenha a configuração padrão.
 
 ./mvnw spring-boot:run
 
+4. Para acessar o banco de dados h2
+   
+   localhost:8099/h2-console
+
 A API estará acessível em http://localhost:8080.
 
 ## Endpoints Principais

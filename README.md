@@ -1,6 +1,5 @@
-## GameList
 
-## Descrição
+## GameList Descrição
 
 O GameList é uma API desenvolvida em Java com Spring Boot para gerenciamento de listas de jogos. O sistema permite listar jogos, categorizá-los e organizá-los de acordo com preferências do usuário.
 
